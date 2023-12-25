@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Investment Form</title>
+    <link rel="stylesheet" href="userinput.css">
+</head>
+<body>
+    <div class="ribbon">
+        <button onclick="location.href='/'">Home</button>
+        <span>Welcome to Our Investment Services</span>
+        <button onclick="location.href='/account'">Account</button>
+    </div>
+    
+    <!-- Form for Net Asset Value and Risk Tolerance -->
+    <section id="investmentForm">
+        <h2>Investment Details</h2>
+        <form>
+            <div class="form-group">
+                <label for="netAssetValue">Net Asset Value</label>
+                <input type="number" id="netAssetValue" name="netAssetValue" required>
+                <span class="info-icon" data-description="Enter your Net Asset Value.">ℹ</span>
+            </div>
+            <div class="form-group">
+                <label for="riskTolerance">Risk Tolerance</label>
+                <select id="riskTolerance" name="riskTolerance" required>
+                    <option value="None">None</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <span class="info-icon" data-description="Select your Risk Tolerance level.">ℹ</span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="userinput.js"></script>
+</body>
+</html>

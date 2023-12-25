@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c; /* Dark gray background */
+    color: #d1d1d1; /* Dim white text for better contrast on dark background */
+}
+
+.ribbon {
+    display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Centers items vertically */
+    background-color: #811d1d; /* Dim dark red background */
+    color: #e6e6e6; /* Soft white text */
+    padding: 10px 20px; /* Padding for the entire ribbon */
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Shadow for depth */
+}
+
+/* Ribbon buttons styling */
+.ribbon button {
+    background-color: #3c0f0f; /* background for buttons */
+    color: #e6e6e6; /* Soft white text */
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Central text in ribbon */
+.ribbon .ribbon-text {
+    flex-grow: 1; /* Allows the text to take up available space */
+    text-align: center;
+}
+
+.ribbon button:hover {
+    background-color: #4e1212; /* Slightly lighter red on hover */
+}
+
+/* Style for the login form */
+#loginForm {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #444; /* Dark border for contrast */
+    border-radius: 4px;
+    background-color: #262626; /* Dark background for the form */
+    color: #d1d1d1; /* Dim white text for the form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style for form inputs and buttons */
+input[type="text"],
+input[type="password"],
+select {
+    padding: 8px;
+    border: 1px solid #444; /* Dark border for inputs */
+    border-radius: 4px;
+    background-color: #1c1c1c; /* Dark background for inputs */
+    color: #d1d1d1; /* Dim white text for inputs */
+    width: calc(100% - 16px); /* Full width minus padding */
+}
+
+button {
+    background-color: #3c0f0f; /* Dark red background for button */
+    color: #e6e6e6; /* Soft white text for button */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4e1212; /* Slightly lighter red on hover */
+}

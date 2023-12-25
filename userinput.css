@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c; /* Dark gray background */
+    color: #d1d1d1; /* Dim white text for better contrast on dark background */
+}
+/* Style for hiding the spinner on number inputs for Webkit browsers like Chrome, Safari, Edge */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox requires a separate property to hide the spinner */
+input[type=number] {
+    -moz-appearance: textfield; /* This is to support Firefox */
+  }
+/* Standard way to hide the spinner on number inputs for other browsers */
+input[type=number] {
+  appearance: textfield; /* Standard property */
+}
+.ribbon {
+    display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Centers items vertically */
+    background-color: #811d1d; /* Dim dark red background */
+    color: #e6e6e6; /* Soft white text */
+    padding: 10px 20px; /* Padding for the entire ribbon */
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Shadow for depth */
+}
+
+/* Ribbon buttons styling */
+.ribbon button {
+    background-color: #3c0f0f; /* background for buttons */
+    color: #e6e6e6; /* Soft white text */
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Central text in ribbon */
+.ribbon .ribbon-text {
+    flex-grow: 1; /* Allows the text to take up available space */
+    text-align: center;
+}
+
+/* Style for the investment form */
+#investmentForm {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #444; /* Dark border for contrast */
+    border-radius: 4px;
+    background-color: #262626; /* Dark background for the form */
+    color: #d1d1d1; /* Dim white text for the form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.info-icon {
+    cursor: help;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #811d1d; /* Dim dark red background for icon */
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+    position: relative; /* This ensures the tooltip is positioned relative to the icon */
+    z-index: 2; /* This ensures the tooltip shows above other content */
+}
+
+/* Tooltip styles for description icons */
+.info-icon:hover::after {
+    content: attr(data-description);
+    position: absolute;
+    bottom: -200%; /* Position the tooltip above the icon */
+    left: 500%; /* Start the tooltip in the center of the icon */
+    transform: translateX(-50%); /* Center the tooltip exactly */
+    white-space: nowrap;
+    background-color: #555;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    z-index: 1;
+    margin-bottom: 5px; /* Give some space between the icon and the tooltip */
+    display: block; /* Make sure the tooltip is shown */
+}
+
+/* Style for form inputs and buttons */
+input[type="number"],
+select {
+    padding: 8px;
+    border: 1px solid #444; /* Dark border for inputs */
+    border-radius: 4px;
+    background-color: #1c1c1c; /* Dark background for inputs */
+    color: #d1d1d1; /* Dim white text for inputs */
+}
+
+button {
+    background-color: #3c0f0f; /* Dark red background for button */
+    color: #e6e6e6; /* Soft white text for button */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4e1212; /* Slightly lighter red on hover */
+}

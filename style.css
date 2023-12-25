@@ -1,0 +1,131 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c; /* Dark gray background */
+    color: #d1d1d1; /* Dim white text for better contrast on dark background */
+}
+
+/* Header and Navigation Styling */
+header {
+    background-color: #811d1d; /* Dim dark red */
+    color: #e6e6e6; /* Soft white for text */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav button {
+    background-color: #3c0f0f; /* Even darker red */
+    color: #e6e6e6; /* Soft white text */
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Allows padding and width/height if needed */
+}
+
+nav button:hover {
+    background-color: #4e1212; /* Slightly lighter red on hover */
+}
+
+/* Right-aligned buttons */
+.right {
+    display: flex;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    color: #e6e6e6; /* Soft white text */
+}
+
+table, th, td {
+    border: 1px solid #444; /* Darker border for contrast */
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #3c0f0f; /* Matching header dark red */
+    color: #e6e6e6; /* Soft white text */
+}
+
+tr:nth-child(even) {
+    background-color: #262626; /* Slightly lighter background for even rows */
+}
+
+/* Responsive Table */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #1c1c1c; /* Dark background for modal */
+    color: #d1d1d1; /* Dim white text for modal */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #444; /* Dark border */
+    width: 30%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bottom-right-button {
+    position: fixed; /* Fixed position relative to the viewport */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    background-color: #3c0f0f; /* Dark red, matching your nav buttons */
+    color: #e6e6e6; /* Soft white text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.bottom-right-button:hover {
+    background-color: #4e1212; /* Lighter red on hover */
+}
